@@ -11,7 +11,7 @@ def farm_action (weather, time_of_day, cows_milking_status, location_of_the_cows
     elif cows_milking_status and location_of_the_cows == 'pasture':
         return 'take cows to cowshed\nmilk cows\ntake cows back to pasture'
     elif weather == 'rainy' and location_of_the_cows == 'cowshed' and slurry_tank or weather == 'neutral' and location_of_the_cows == 'cowshed' and slurry_tank:
-        return 'fertilze pasture'
+        return 'fertilize pasture'
     elif slurry_tank and weather == 'rainy' and location_of_the_cows == 'pasture' or slurry_tank and weather == 'neutral' and location_of_the_cows == 'pasture':
         return 'take cows to cowshed\nfertilize pasture\ntake cows back to pasture'
     elif grass_status and season == 'spring' and weather == 'sunny' and location_of_the_cows == 'cowshed':
